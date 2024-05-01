@@ -12,3 +12,9 @@ vim.keymap.set(
 
 -- select all
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
+
+-- buffers
+vim.keymap.del("n", "<S-h>")
+vim.keymap.del("n", "<S-l>")
+vim.keymap.set("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "prev Buffer" })
+vim.keymap.set("n", "<tab>", "<cmd>bnext<cr>", { desc = "next Buffer" })
