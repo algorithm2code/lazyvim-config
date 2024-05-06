@@ -13,7 +13,10 @@ vim.keymap.set(
 -- select all
 vim.keymap.set("n", "<C-a>", "gg<S-v>G")
 
--- buffers
+-- Erase word with ctrl + shift
+vim.keymap.set("i", <S-BS>", "<C-W>", { noremap = true })
+
+
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
 vim.keymap.set("n", "<S-tab>", "<cmd>bprevious<cr>", { desc = "prev Buffer" })
